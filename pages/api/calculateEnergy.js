@@ -43,7 +43,7 @@ export default async function handler(req, res) {
       // Stream OpenAI response
       const completion = await openai.chat.completions.create({
         messages: sendMessages,
-        model: "gpt-4-turbo-preview",
+        model: "gpt-4o-2024-08-06",
         temperature: 0.3,
         top_p: 0.2,
         n: 1, 
